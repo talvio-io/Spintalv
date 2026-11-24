@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 interface IAgentIdRegistry {
-    function hasAgentId(address wallet) external view returns (bool);
+    function balanceOf(address wallet) external view returns (uint256);
 }
 
 /// @title TalvBot — a 999-capsule gacha on BNB Chain.
@@ -67,7 +67,7 @@ contract TalvBot is ERC721, Ownable {
     }
 
     function hasAgentId(address wallet) public view returns (bool) {
-        return AGENT_ID_REGISTRY.hasAgentId(wallet);
+        return AGENT_ID_REGISTRY.balanceOf(wallet) > 0;
     }
 
     // ---------- spinning ----------
