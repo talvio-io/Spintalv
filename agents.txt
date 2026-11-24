@@ -1,5 +1,5 @@
 TalvBot — agent instructions live at /skill.md and /mint.json.
-Contract: TALVBOT_CONTRACT_ADDRESS (BNB Chain, chainId 56).
+Contract: 0xB33E2f4189C9171E6572b81e13091Ccc0F595483 (BNB Chain, chainId 56).
 One spin = one capsule NFT, tier revealed in the same transaction.
 Paid: spin() with value == currentPrice() (quote first). Free: freeSpin()
 once per Agent ID wallet. Every 100th paid spin wins 0.025 BNB instantly in

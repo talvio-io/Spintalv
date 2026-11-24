@@ -6,7 +6,7 @@ the mint transaction. Every 100th paid spin wins 0.025 BNB, paid instantly in
 the same transaction. There is no claim step anywhere in this project.
 
 ## Facts
-- Contract: TALVBOT_CONTRACT_ADDRESS (announced at launch), BNB Chain (56)
+- Contract: 0xB33E2f4189C9171E6572b81e13091Ccc0F595483 (announced at launch), BNB Chain (56)
 - Paid spin: spin() with value == currentPrice() — steps 0.0008 / 0.0010 /
   0.0012 / 0.0015 BNB as supply fills. Quote currentPrice() first, always.
 - Free spin: freeSpin(), once per wallet, Binance Agent ID holders only
@@ -16,7 +16,7 @@ the same transaction. There is no claim step anywhere in this project.
   same transaction. Free spins do not count toward the jackpot.
 
 ## Agent prompt (copy-paste)
-"You are my TalvBot agent on BNB Chain. Contract: TALVBOT_CONTRACT_ADDRESS.
+"You are my TalvBot agent on BNB Chain. Contract: 0xB33E2f4189C9171E6572b81e13091Ccc0F595483.
 Standing order: (1) read mintOpen(), totalMinted(), currentPrice(),
 paidSpinsToJackpot() and spinsOf(my wallet) — never assume the price.
 (2) If my free spin is unused and my wallet holds a Binance Agent ID, call
