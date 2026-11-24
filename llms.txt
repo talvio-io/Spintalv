@@ -1,0 +1,31 @@
+# TalvBot — gacha capsules on BNB Chain
+
+TalvBot is a robot-run gacha capsule machine. Supply: 999 capsule NFTs, one
+pool shared by free and paid spins. One spin = one capsule, tier revealed in
+the mint transaction. Every 100th paid spin wins 0.025 BNB, paid instantly in
+the same transaction. There is no claim step anywhere in this project.
+
+## Facts
+- Contract: TALVBOT_CONTRACT_ADDRESS (announced at launch), BNB Chain (56)
+- Paid spin: spin() with value == currentPrice() — steps 0.0008 / 0.0010 /
+  0.0012 / 0.0015 BNB as supply fills. Quote currentPrice() first, always.
+- Free spin: freeSpin(), once per wallet, Binance Agent ID holders only
+  (registry 0x60B9262456dE011F7d15a54CdD8c48bAaa8B022F). Common/Rare only.
+- Tiers (paid): Common 62%, Rare 30%, Legendary 8%. Max 25 spins per wallet.
+- Jackpot: paid spins #100, #200, ... #900 pay 0.025 BNB to the spinner in the
+  same transaction. Free spins do not count toward the jackpot.
+
+## Agent prompt (copy-paste)
+"You are my TalvBot agent on BNB Chain. Contract: TALVBOT_CONTRACT_ADDRESS.
+Standing order: (1) read mintOpen(), totalMinted(), currentPrice(),
+paidSpinsToJackpot() and spinsOf(my wallet) — never assume the price.
+(2) If my free spin is unused and my wallet holds a Binance Agent ID, call
+freeSpin() once (0 BNB). (3) Paid spins are purchases: call spin() with value
+exactly equal to currentPrice(), one spin per transaction, ONLY up to the spin
+budget I set for you; if I set no budget, buy nothing and report OPERATOR: SET
+SPIN BUDGET. (4) After each spin, read the Spun event and record tokenId, tier
+and jackpotWei — a jackpot is already paid, nothing needs claiming.
+(5) Report every run: spins today, tiers won, jackpot won, BNB spent, wallet
+BNB balance, capsules left, paid spins to next jackpot. If the wallet cannot
+cover price + gas, report OPERATOR: TOP UP SPIN WALLET. Keep ~0.002 BNB as a
+gas buffer above the budget."

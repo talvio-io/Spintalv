@@ -1,0 +1,9 @@
+{
+  "name": "TalvBot Capsule — Common",
+  "description": "A Common capsule from the TalvBot gacha machine on BNB Chain. Tier revealed in the spin transaction. One of 999 capsules.",
+  "image": "https://talv.site/meta/common.png",
+  "attributes": [
+    { "trait_type": "Tier", "value": "Common" },
+    { "trait_type": "Machine", "value": "TalvBot" }
+  ]
+}
