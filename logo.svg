@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#16233f"/>
+      <stop offset="1" stop-color="#070b16"/>
+    </linearGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dbe7f5"/>
+      <stop offset="0.55" stop-color="#8fa8c4"/>
+      <stop offset="1" stop-color="#5d7592"/>
+    </linearGradient>
+    <linearGradient id="face" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b2a47"/>
+      <stop offset="1" stop-color="#0a1224"/>
+    </linearGradient>
+    <linearGradient id="capA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff9a62"/>
+      <stop offset="1" stop-color="#f4502a"/>
+    </linearGradient>
+    <linearGradient id="capB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffe98a"/>
+      <stop offset="1" stop-color="#f5b91e"/>
+    </linearGradient>
+    <radialGradient id="eyeGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#a5f7ff"/>
+      <stop offset="0.6" stop-color="#37d6f5"/>
+      <stop offset="1" stop-color="#37d6f5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- badge -->
+  <rect x="16" y="16" width="480" height="480" rx="104" fill="url(#bg)"/>
+  <rect x="16" y="16" width="480" height="480" rx="104" fill="none" stroke="#f5b91e" stroke-width="10"/>
+
+  <!-- antenna -->
+  <rect x="248" y="52" width="16" height="44" rx="8" fill="url(#steel)"/>
+  <circle cx="256" cy="48" r="20" fill="url(#capB)"/>
+  <circle cx="256" cy="48" r="30" fill="#f5b91e" opacity="0.18"/>
+
+  <!-- ears -->
+  <rect x="92" y="196" width="30" height="72" rx="14" fill="url(#steel)"/>
+  <rect x="390" y="196" width="30" height="72" rx="14" fill="url(#steel)"/>
+
+  <!-- robot head -->
+  <rect x="118" y="96" width="276" height="216" rx="52" fill="url(#steel)"/>
+  <rect x="118" y="96" width="276" height="216" rx="52" fill="none" stroke="#31435f" stroke-width="4"/>
+  <!-- face screen -->
+  <rect x="146" y="128" width="220" height="128" rx="36" fill="url(#face)"/>
+  <!-- eyes -->
+  <circle cx="212" cy="184" r="34" fill="url(#eyeGlow)"/>
+  <circle cx="300" cy="184" r="34" fill="url(#eyeGlow)"/>
+  <circle cx="212" cy="184" r="17" fill="#8ff3ff"/>
+  <circle cx="300" cy="184" r="17" fill="#8ff3ff"/>
+  <circle cx="218" cy="177" r="6" fill="#ffffff"/>
+  <circle cx="306" cy="177" r="6" fill="#ffffff"/>
+  <!-- mouth vent -->
+  <rect x="222" y="228" width="68" height="10" rx="5" fill="#37d6f5" opacity="0.85"/>
+  <!-- cheeks -->
+  <circle cx="160" cy="282" r="9" fill="#31435f"/>
+  <circle cx="352" cy="282" r="9" fill="#31435f"/>
+
+  <!-- capsule, tilted across the front -->
+  <g transform="rotate(-28 256 388)">
+    <rect x="116" y="338" width="280" height="104" rx="52" fill="url(#capB)"/>
+    <path d="M256 338 h88 a52 52 0 0 1 0 104 h-88 z" fill="url(#capB)"/>
+    <path d="M116 390 a52 52 0 0 1 52-52 h88 v104 h-88 a52 52 0 0 1-52-52 z" fill="url(#capA)"/>
+    <rect x="250" y="338" width="12" height="104" fill="#0a1224" opacity="0.22"/>
+    <ellipse cx="180" cy="364" rx="52" ry="13" fill="#ffffff" opacity="0.5"/>
+    <ellipse cx="330" cy="364" rx="40" ry="11" fill="#ffffff" opacity="0.45"/>
+  </g>
+
+  <!-- sparkles -->
+  <path d="M96 108 l7 18 18 7 -18 7 -7 18 -7-18 -18-7 18-7 z" fill="#ffd257"/>
+  <path d="M414 120 l5 13 13 5 -13 5 -5 13 -5-13 -13-5 13-5 z" fill="#37d6f5"/>
+  <path d="M428 300 l4 10 10 4 -10 4 -4 10 -4-10 -10-4 10-4 z" fill="#ffd257"/>
+</svg>
