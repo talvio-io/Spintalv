@@ -59,14 +59,19 @@
   <circle cx="160" cy="282" r="9" fill="#31435f"/>
   <circle cx="352" cy="282" r="9" fill="#31435f"/>
 
-  <!-- capsule, tilted across the front -->
-  <g transform="rotate(-28 256 388)">
-    <rect x="116" y="338" width="280" height="104" rx="52" fill="url(#capB)"/>
-    <path d="M256 338 h88 a52 52 0 0 1 0 104 h-88 z" fill="url(#capB)"/>
-    <path d="M116 390 a52 52 0 0 1 52-52 h88 v104 h-88 a52 52 0 0 1-52-52 z" fill="url(#capA)"/>
-    <rect x="250" y="338" width="12" height="104" fill="#0a1224" opacity="0.22"/>
-    <ellipse cx="180" cy="364" rx="52" ry="13" fill="#ffffff" opacity="0.5"/>
-    <ellipse cx="330" cy="364" rx="40" ry="11" fill="#ffffff" opacity="0.45"/>
+  <!-- BNB coin -->
+  <g>
+    <circle cx="256" cy="392" r="98" fill="url(#capB)"/>
+    <circle cx="256" cy="392" r="98" fill="none" stroke="#b97e04" stroke-width="6"/>
+    <circle cx="256" cy="392" r="78" fill="none" stroke="#b97e04" stroke-width="4" opacity="0.65"/>
+    <g fill="#141c30">
+      <rect x="238" y="374" width="36" height="36" transform="rotate(45 256 392)"/>
+      <rect x="242" y="322" width="28" height="28" transform="rotate(45 256 336)"/>
+      <rect x="242" y="434" width="28" height="28" transform="rotate(45 256 448)"/>
+      <rect x="186" y="378" width="28" height="28" transform="rotate(45 200 392)"/>
+      <rect x="298" y="378" width="28" height="28" transform="rotate(45 312 392)"/>
+    </g>
+    <ellipse cx="212" cy="330" rx="46" ry="14" fill="#ffffff" opacity="0.35" transform="rotate(-24 212 330)"/>
   </g>
 
   <!-- sparkles -->
