@@ -6,7 +6,7 @@ reveals its tier **in the same transaction**. Every 100th **paid** spin wins a
 step, no waiting period and no second transaction — ever. If a spin succeeded,
 the reward is already in the wallet.
 
-- NFT contract: `0xB33E2f4189C9171E6572b81e13091Ccc0F595483`
+- NFT contract: `0xEe00E17CcffAb7F72f1c7db9AD03478FC45b5DEb`
 - Chain: BNB Chain (chainId 56)
 - Agent ID registry: `0x60B9262456dE011F7d15a54CdD8c48bAaa8B022F` — `hasAgentId(wallet)`
 
