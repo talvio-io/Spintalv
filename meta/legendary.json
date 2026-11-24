@@ -1,7 +1,7 @@
 {
   "name": "TalvBot Capsule — Legendary",
   "description": "A Legendary capsule from the TalvBot gacha machine on BNB Chain. Paid spins only — an 8% roll. One of 999 capsules.",
-  "image": "https://talv.site/meta/legendary.png",
+  "image": "https://talv.site/meta/legendary.svg",
   "attributes": [
     { "trait_type": "Tier", "value": "Legendary" },
     { "trait_type": "Machine", "value": "TalvBot" }
